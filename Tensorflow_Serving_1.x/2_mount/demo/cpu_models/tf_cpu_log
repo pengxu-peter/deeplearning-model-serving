@@ -1,0 +1,63 @@
+2019-08-05 12:10:28.849683: I tensorflow_serving/model_servers/server_core.cc:462] Adding/updating models.
+2019-08-05 12:10:28.858209: I tensorflow_serving/model_servers/server_core.cc:517]  (Re-)adding model: qixiong
+2019-08-05 12:10:28.858293: I tensorflow_serving/model_servers/server_core.cc:517]  (Re-)adding model: jiye
+2019-08-05 12:10:28.858327: I tensorflow_serving/model_servers/server_core.cc:517]  (Re-)adding model: front
+2019-08-05 12:10:28.858353: I tensorflow_serving/model_servers/server_core.cc:517]  (Re-)adding model: feiyan
+2019-08-05 12:10:28.858379: I tensorflow_serving/model_servers/server_core.cc:517]  (Re-)adding model: feijiehe
+2019-08-05 12:10:28.951446: I tensorflow_serving/core/basic_manager.cc:739] Successfully reserved resources to load servable {name: qixiong version: 1}
+2019-08-05 12:10:28.951467: I tensorflow_serving/core/loader_harness.cc:66] Approving load for servable version {name: qixiong version: 1}
+2019-08-05 12:10:28.951477: I tensorflow_serving/core/loader_harness.cc:74] Loading servable version {name: qixiong version: 1}
+2019-08-05 12:10:28.951490: I external/org_tensorflow/tensorflow/contrib/session_bundle/bundle_shim.cc:360] Attempting to load native SavedModelBundle in bundle-shim from: /data/qixiong_model/1
+2019-08-05 12:10:28.951520: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:31] Reading SavedModel from: /data/qixiong_model/1
+2019-08-05 12:10:29.000027: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:54] Reading meta graph with tags { serve }
+2019-08-05 12:10:29.006028: I external/org_tensorflow/tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-08-05 12:10:29.079819: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:113] Restoring SavedModel bundle.
+2019-08-05 12:10:29.235983: I tensorflow_serving/core/basic_manager.cc:739] Successfully reserved resources to load servable {name: front version: 1}
+2019-08-05 12:10:29.236011: I tensorflow_serving/core/loader_harness.cc:66] Approving load for servable version {name: front version: 1}
+2019-08-05 12:10:29.236030: I tensorflow_serving/core/loader_harness.cc:74] Loading servable version {name: front version: 1}
+2019-08-05 12:10:29.236054: I external/org_tensorflow/tensorflow/contrib/session_bundle/bundle_shim.cc:360] Attempting to load native SavedModelBundle in bundle-shim from: /data/front_model/1
+2019-08-05 12:10:29.236064: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:31] Reading SavedModel from: /data/front_model/1
+2019-08-05 12:10:29.236536: I tensorflow_serving/core/basic_manager.cc:739] Successfully reserved resources to load servable {name: feiyan version: 1}
+2019-08-05 12:10:29.236552: I tensorflow_serving/core/loader_harness.cc:66] Approving load for servable version {name: feiyan version: 1}
+2019-08-05 12:10:29.236564: I tensorflow_serving/core/loader_harness.cc:74] Loading servable version {name: feiyan version: 1}
+2019-08-05 12:10:29.236579: I external/org_tensorflow/tensorflow/contrib/session_bundle/bundle_shim.cc:360] Attempting to load native SavedModelBundle in bundle-shim from: /data/feiyan_model/1
+2019-08-05 12:10:29.236589: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:31] Reading SavedModel from: /data/feiyan_model/1
+2019-08-05 12:10:29.263109: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:54] Reading meta graph with tags { serve }
+2019-08-05 12:10:29.270653: I tensorflow_serving/core/basic_manager.cc:739] Successfully reserved resources to load servable {name: feijiehe version: 1}
+2019-08-05 12:10:29.270682: I tensorflow_serving/core/loader_harness.cc:66] Approving load for servable version {name: feijiehe version: 1}
+2019-08-05 12:10:29.270694: I tensorflow_serving/core/loader_harness.cc:74] Loading servable version {name: feijiehe version: 1}
+2019-08-05 12:10:29.270709: I external/org_tensorflow/tensorflow/contrib/session_bundle/bundle_shim.cc:360] Attempting to load native SavedModelBundle in bundle-shim from: /data/jiehe_model/1
+2019-08-05 12:10:29.270730: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:31] Reading SavedModel from: /data/jiehe_model/1
+2019-08-05 12:10:29.306605: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:54] Reading meta graph with tags { serve }
+2019-08-05 12:10:29.318608: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:113] Restoring SavedModel bundle.
+2019-08-05 12:10:29.379602: I tensorflow_serving/core/basic_manager.cc:739] Successfully reserved resources to load servable {name: jiye version: 1}
+2019-08-05 12:10:29.379638: I tensorflow_serving/core/loader_harness.cc:66] Approving load for servable version {name: jiye version: 1}
+2019-08-05 12:10:29.379651: I tensorflow_serving/core/loader_harness.cc:74] Loading servable version {name: jiye version: 1}
+2019-08-05 12:10:29.379665: I external/org_tensorflow/tensorflow/contrib/session_bundle/bundle_shim.cc:360] Attempting to load native SavedModelBundle in bundle-shim from: /data/jiye_model/1
+2019-08-05 12:10:29.379673: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:31] Reading SavedModel from: /data/jiye_model/1
+2019-08-05 12:10:29.396207: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:54] Reading meta graph with tags { serve }
+2019-08-05 12:10:29.404657: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:113] Restoring SavedModel bundle.
+2019-08-05 12:10:29.416632: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:113] Restoring SavedModel bundle.
+2019-08-05 12:10:29.544595: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:54] Reading meta graph with tags { serve }
+2019-08-05 12:10:29.953398: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:113] Restoring SavedModel bundle.
+2019-08-05 12:10:37.043269: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:148] Running LegacyInitOp on SavedModel bundle.
+2019-08-05 12:10:37.043315: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:233] SavedModel load for tags { serve }; Status: success. Took 7663637 microseconds.
+2019-08-05 12:10:37.043362: I tensorflow_serving/servables/tensorflow/saved_model_warmup.cc:83] No warmup data file found at /data/jiye_model/1/assets.extra/tf_serving_warmup_requests
+2019-08-05 12:10:37.043433: I tensorflow_serving/core/loader_harness.cc:86] Successfully loaded servable version {name: jiye version: 1}
+2019-08-05 12:10:40.547012: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:148] Running LegacyInitOp on SavedModel bundle.
+2019-08-05 12:10:40.547122: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:233] SavedModel load for tags { serve }; Status: success. Took 11595616 microseconds.
+2019-08-05 12:10:40.547212: I tensorflow_serving/servables/tensorflow/saved_model_warmup.cc:83] No warmup data file found at /data/qixiong_model/1/assets.extra/tf_serving_warmup_requests
+2019-08-05 12:10:40.547516: I tensorflow_serving/core/loader_harness.cc:86] Successfully loaded servable version {name: qixiong version: 1}
+2019-08-05 12:10:44.369296: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:148] Running LegacyInitOp on SavedModel bundle.
+2019-08-05 12:10:44.369443: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:233] SavedModel load for tags { serve }; Status: success. Took 15132842 microseconds.
+2019-08-05 12:10:44.369570: I tensorflow_serving/servables/tensorflow/saved_model_warmup.cc:83] No warmup data file found at /data/feiyan_model/1/assets.extra/tf_serving_warmup_requests
+2019-08-05 12:10:44.369901: I tensorflow_serving/core/loader_harness.cc:86] Successfully loaded servable version {name: feiyan version: 1}
+2019-08-05 12:10:48.198656: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:148] Running LegacyInitOp on SavedModel bundle.
+2019-08-05 12:10:48.198766: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:233] SavedModel load for tags { serve }; Status: success. Took 18962693 microseconds.
+2019-08-05 12:10:48.198875: I tensorflow_serving/servables/tensorflow/saved_model_warmup.cc:83] No warmup data file found at /data/front_model/1/assets.extra/tf_serving_warmup_requests
+2019-08-05 12:10:48.199208: I tensorflow_serving/core/loader_harness.cc:86] Successfully loaded servable version {name: front version: 1}
+2019-08-05 12:10:48.446365: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:148] Running LegacyInitOp on SavedModel bundle.
+2019-08-05 12:10:48.446404: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:233] SavedModel load for tags { serve }; Status: success. Took 19175673 microseconds.
+2019-08-05 12:10:48.446432: I tensorflow_serving/servables/tensorflow/saved_model_warmup.cc:83] No warmup data file found at /data/jiehe_model/1/assets.extra/tf_serving_warmup_requests
+2019-08-05 12:10:48.446501: I tensorflow_serving/core/loader_harness.cc:86] Successfully loaded servable version {name: feijiehe version: 1}
+2019-08-05 12:10:48.497050: I tensorflow_serving/model_servers/main.cc:327] Running ModelServer at 0.0.0.0:19000 ...

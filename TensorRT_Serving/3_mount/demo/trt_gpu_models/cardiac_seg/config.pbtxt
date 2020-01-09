@@ -1,0 +1,17 @@
+name: "cardiac_seg"
+platform: "tensorflow_savedmodel"
+max_batch_size: 128
+input [
+  {
+    name: "data_input"
+    data_type: TYPE_FP32
+    dims: [ 1, 128, 128, 128 ]
+  }
+]
+output [
+  {
+    name: "output"
+    data_type: TYPE_FP32
+    dims: [6, 128, 128, 128]
+  }
+]

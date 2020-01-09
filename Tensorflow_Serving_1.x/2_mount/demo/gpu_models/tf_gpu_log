@@ -1,0 +1,24 @@
+2019-08-21 13:28:32.699804: I tensorflow_serving/model_servers/server_core.cc:462] Adding/updating models.
+2019-08-21 13:28:32.699911: I tensorflow_serving/model_servers/server_core.cc:517]  (Re-)adding model: 3d_nodule_detector
+2019-08-21 13:28:32.800225: I tensorflow_serving/core/basic_manager.cc:739] Successfully reserved resources to load servable {name: 3d_nodule_detector version: 1}
+2019-08-21 13:28:32.800300: I tensorflow_serving/core/loader_harness.cc:66] Approving load for servable version {name: 3d_nodule_detector version: 1}
+2019-08-21 13:28:32.800322: I tensorflow_serving/core/loader_harness.cc:74] Loading servable version {name: 3d_nodule_detector version: 1}
+2019-08-21 13:28:32.800356: I external/org_tensorflow/tensorflow/contrib/session_bundle/bundle_shim.cc:360] Attempting to load native SavedModelBundle in bundle-shim from: /data/detector_3d/1
+2019-08-21 13:28:32.800384: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:31] Reading SavedModel from: /data/detector_3d/1
+2019-08-21 13:28:32.862833: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:54] Reading meta graph with tags { serve }
+2019-08-21 13:28:32.915717: I external/org_tensorflow/tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-08-21 13:28:33.182486: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1405] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:85:00.0
+totalMemory: 10.92GiB freeMemory: 10.77GiB
+2019-08-21 13:28:33.182537: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2019-08-21 13:28:33.736334: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-08-21 13:28:33.736395: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2019-08-21 13:28:33.736405: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2019-08-21 13:28:33.737095: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10421 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:85:00.0, compute capability: 6.1)
+2019-08-21 13:28:34.194417: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:113] Restoring SavedModel bundle.
+2019-08-21 13:28:34.455680: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:148] Running LegacyInitOp on SavedModel bundle.
+2019-08-21 13:28:34.455800: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:233] SavedModel load for tags { serve }; Status: success. Took 1655402 microseconds.
+2019-08-21 13:28:34.455892: I tensorflow_serving/servables/tensorflow/saved_model_warmup.cc:83] No warmup data file found at /data/detector_3d/1/assets.extra/tf_serving_warmup_requests
+2019-08-21 13:28:34.456139: I tensorflow_serving/core/loader_harness.cc:86] Successfully loaded servable version {name: 3d_nodule_detector version: 1}
+2019-08-21 13:28:34.495472: I tensorflow_serving/model_servers/main.cc:327] Running ModelServer at 0.0.0.0:19001 ...

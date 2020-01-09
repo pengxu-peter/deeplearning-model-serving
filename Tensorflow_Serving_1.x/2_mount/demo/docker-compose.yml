@@ -1,0 +1,18 @@
+version: '2.4'
+services:
+  gpu-serving:
+    image: tensorflow/serving:1.13.0-gpu
+    restart: always
+    runtime:
+      nvidia
+    ports:
+      - "19001:19001"
+    container_name: gpu-serving-S1
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ./gpu_models:/data
+    entrypoint:
+      - /bin/bash
+      - /data/entrypoint.sh
+    network_mode:
+      bridge

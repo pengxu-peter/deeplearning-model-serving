@@ -1,0 +1,142 @@
+I1029 06:13:33.517357 20 main.cc:325] Starting endpoints, 'inference:0' listening on
+I1029 06:13:33.517664 20 grpc_server.cc:263] Starting a GRPCService at 0.0.0.0:8001
+I1029 06:13:33.517681 20 grpc_server.cc:269] Register TensorRT GRPCService
+I1029 06:13:33.517702 20 grpc_server.cc:272] Register Infer RPC
+I1029 06:13:33.517709 20 grpc_server.cc:276] Register StreamInfer RPC
+I1029 06:13:33.517715 20 grpc_server.cc:281] Register Status RPC
+I1029 06:13:33.517720 20 grpc_server.cc:285] Register Profile RPC
+I1029 06:13:33.517726 20 grpc_server.cc:289] Register Health RPC
+I1029 06:13:33.517732 20 grpc_server.cc:301] Register Executor
+I1029 06:13:33.525964 20 http_server.cc:579] Starting HTTPService at 0.0.0.0:8000
+I1029 06:13:33.568206 20 main.cc:356]  localhost:8002 for metric reporting
+I1029 06:13:36.676595 20 metrics.cc:149] found 8 GPUs supporting NVML metrics
+I1029 06:13:36.685306 20 metrics.cc:158]   GPU 0: GeForce GTX 1080 Ti
+I1029 06:13:36.692209 20 metrics.cc:158]   GPU 1: GeForce GTX 1080 Ti
+I1029 06:13:36.705869 20 metrics.cc:158]   GPU 2: GeForce GTX 1080 Ti
+I1029 06:13:36.713700 20 metrics.cc:158]   GPU 3: GeForce GTX 1080 Ti
+I1029 06:13:36.724412 20 metrics.cc:158]   GPU 4: GeForce GTX 1080 Ti
+I1029 06:13:36.733042 20 metrics.cc:158]   GPU 5: GeForce GTX 1080 Ti
+I1029 06:13:36.744116 20 metrics.cc:158]   GPU 6: GeForce GTX 1080 Ti
+I1029 06:13:36.753122 20 metrics.cc:158]   GPU 7: GeForce GTX 1080 Ti
+I1029 06:13:36.754942 20 server.cc:113] Initializing TensorRT Inference Server
+I1029 06:13:36.875317 20 server_status.cc:83] New status tracking for model 'cardiac_seg'
+I1029 06:13:36.875411 20 model_repository_manager.cc:627] loading: cardiac_seg:1
+I1029 06:13:36.875565 20 server_status.cc:83] New status tracking for model 'detector_3d'
+I1029 06:13:36.875633 20 model_repository_manager.cc:627] loading: detector_3d:1
+I1029 06:13:36.877768 20 base_backend.cc:162] Creating instance cardiac_seg_0_gpu0 on GPU 0 (6.1) using model.savedmodel
+2019-10-29 14:13:36.877984: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:31] Reading SavedModel from: /data/cardiac_seg/1/model.savedmodel
+I1029 06:13:36.878703 20 base_backend.cc:162] Creating instance detector_3d_0_0_gpu0 on GPU 0 (6.1) using model.graphdef
+2019-10-29 14:13:36.984486: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:54] Reading meta graph with tags { serve }
+2019-10-29 14:13:37.072138: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1433] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:04:00.0
+totalMemory: 10.92GiB freeMemory: 10.77GiB
+2019-10-29 14:13:37.072228: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0
+2019-10-29 14:13:39.871707: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-10-29 14:13:39.871792: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 
+2019-10-29 14:13:39.871804: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N 
+2019-10-29 14:13:39.872057: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10149 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:04:00.0, compute capability: 6.1)
+2019-10-29 14:13:39.913759: I external/org_tensorflow/tensorflow/compiler/xla/service/service.cc:161] XLA service 0x7fd3694506a0 executing computations on platform CUDA. Devices:
+2019-10-29 14:13:39.913852: I external/org_tensorflow/tensorflow/compiler/xla/service/service.cc:168]   StreamExecutor device (0): GeForce GTX 1080 Ti, Compute Capability 6.1
+2019-10-29 14:13:39.917854: I external/org_tensorflow/tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200075000 Hz
+2019-10-29 14:13:39.923867: I external/org_tensorflow/tensorflow/compiler/xla/service/service.cc:161] XLA service 0x7fd369588180 executing computations on platform Host. Devices:
+2019-10-29 14:13:39.923927: I external/org_tensorflow/tensorflow/compiler/xla/service/service.cc:168]   StreamExecutor device (0): <undefined>, <undefined>
+2019-10-29 14:13:39.924566: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0
+2019-10-29 14:13:39.924697: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-10-29 14:13:39.924722: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 
+2019-10-29 14:13:39.924737: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N 
+2019-10-29 14:13:39.925043: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10149 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:04:00.0, compute capability: 6.1)
+I1029 06:13:40.169146 20 base_backend.cc:162] Creating instance detector_3d_0_1_gpu0 on GPU 0 (6.1) using model.graphdef
+2019-10-29 14:13:40.169324: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0
+2019-10-29 14:13:40.169422: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-10-29 14:13:40.169442: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 
+2019-10-29 14:13:40.169455: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N 
+2019-10-29 14:13:40.169657: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10149 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:04:00.0, compute capability: 6.1)
+I1029 06:13:40.359894 20 base_backend.cc:162] Creating instance detector_3d_0_2_gpu0 on GPU 0 (6.1) using model.graphdef
+2019-10-29 14:13:40.360079: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0
+2019-10-29 14:13:40.360171: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-10-29 14:13:40.360188: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 
+2019-10-29 14:13:40.360200: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N 
+2019-10-29 14:13:40.360392: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10149 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:04:00.0, compute capability: 6.1)
+I1029 06:13:40.547287 20 base_backend.cc:162] Creating instance detector_3d_0_3_gpu0 on GPU 0 (6.1) using model.graphdef
+2019-10-29 14:13:40.547473: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0
+2019-10-29 14:13:40.547568: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-10-29 14:13:40.547585: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 
+2019-10-29 14:13:40.547596: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N 
+2019-10-29 14:13:40.547789: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10149 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:04:00.0, compute capability: 6.1)
+2019-10-29 14:13:40.608773: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:183] Restoring SavedModel bundle.
+I1029 06:13:40.741357 20 base_backend.cc:162] Creating instance detector_3d_0_4_gpu0 on GPU 0 (6.1) using model.graphdef
+2019-10-29 14:13:40.741536: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0
+2019-10-29 14:13:40.741620: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-10-29 14:13:40.741637: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 
+2019-10-29 14:13:40.741649: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N 
+2019-10-29 14:13:40.741831: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10149 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:04:00.0, compute capability: 6.1)
+I1029 06:13:40.955758 20 base_backend.cc:162] Creating instance detector_3d_0_5_gpu0 on GPU 0 (6.1) using model.graphdef
+2019-10-29 14:13:40.955984: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0
+2019-10-29 14:13:40.956084: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-10-29 14:13:40.956102: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 
+2019-10-29 14:13:40.956114: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N 
+2019-10-29 14:13:40.956314: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10149 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:04:00.0, compute capability: 6.1)
+I1029 06:13:41.241284 20 base_backend.cc:162] Creating instance detector_3d_0_6_gpu0 on GPU 0 (6.1) using model.graphdef
+2019-10-29 14:13:41.241466: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0
+2019-10-29 14:13:41.241548: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-10-29 14:13:41.241563: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 
+2019-10-29 14:13:41.241574: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N 
+2019-10-29 14:13:41.241745: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10149 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:04:00.0, compute capability: 6.1)
+I1029 06:13:41.428734 20 base_backend.cc:162] Creating instance detector_3d_0_7_gpu0 on GPU 0 (6.1) using model.graphdef
+2019-10-29 14:13:41.428905: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0
+2019-10-29 14:13:41.428980: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-10-29 14:13:41.428992: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 
+2019-10-29 14:13:41.429000: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N 
+2019-10-29 14:13:41.429152: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10149 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:04:00.0, compute capability: 6.1)
+I1029 06:13:41.712218 20 base_backend.cc:162] Creating instance detector_3d_0_8_gpu0 on GPU 0 (6.1) using model.graphdef
+2019-10-29 14:13:41.712444: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0
+2019-10-29 14:13:41.712549: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-10-29 14:13:41.712567: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 
+2019-10-29 14:13:41.712579: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N 
+2019-10-29 14:13:41.712776: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10149 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:04:00.0, compute capability: 6.1)
+2019-10-29 14:13:41.907886: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:298] SavedModel load for tags { serve }; Status: success. Took 5029776 microseconds.
+I1029 06:13:41.949656 20 model_repository_manager.cc:758] successfully loaded 'cardiac_seg' version 1
+I1029 06:13:41.996185 20 base_backend.cc:162] Creating instance detector_3d_0_9_gpu0 on GPU 0 (6.1) using model.graphdef
+2019-10-29 14:13:41.996406: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0
+2019-10-29 14:13:41.996484: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-10-29 14:13:41.996500: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 
+2019-10-29 14:13:41.996511: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N 
+2019-10-29 14:13:41.996697: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10149 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:04:00.0, compute capability: 6.1)
+I1029 06:13:42.373203 20 base_backend.cc:162] Creating instance detector_3d_0_10_gpu0 on GPU 0 (6.1) using model.graphdef
+2019-10-29 14:13:42.373418: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0
+2019-10-29 14:13:42.373497: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-10-29 14:13:42.373512: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 
+2019-10-29 14:13:42.373524: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N 
+2019-10-29 14:13:42.373701: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10149 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:04:00.0, compute capability: 6.1)
+I1029 06:13:42.539021 20 base_backend.cc:162] Creating instance detector_3d_0_11_gpu0 on GPU 0 (6.1) using model.graphdef
+2019-10-29 14:13:42.539272: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0
+2019-10-29 14:13:42.539360: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-10-29 14:13:42.539376: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 
+2019-10-29 14:13:42.539388: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N 
+2019-10-29 14:13:42.539576: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10149 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:04:00.0, compute capability: 6.1)
+I1029 06:13:42.739331 20 base_backend.cc:162] Creating instance detector_3d_0_12_gpu0 on GPU 0 (6.1) using model.graphdef
+2019-10-29 14:13:42.739609: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0
+2019-10-29 14:13:42.739700: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-10-29 14:13:42.739716: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 
+2019-10-29 14:13:42.739727: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N 
+2019-10-29 14:13:42.739917: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10149 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:04:00.0, compute capability: 6.1)
+I1029 06:13:42.955826 20 base_backend.cc:162] Creating instance detector_3d_0_13_gpu0 on GPU 0 (6.1) using model.graphdef
+2019-10-29 14:13:42.956112: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0
+2019-10-29 14:13:42.956207: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-10-29 14:13:42.956224: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 
+2019-10-29 14:13:42.956236: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N 
+2019-10-29 14:13:42.956432: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10149 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:04:00.0, compute capability: 6.1)
+I1029 06:13:43.308387 20 base_backend.cc:162] Creating instance detector_3d_0_14_gpu0 on GPU 0 (6.1) using model.graphdef
+2019-10-29 14:13:43.308657: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0
+2019-10-29 14:13:43.308750: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-10-29 14:13:43.308777: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 
+2019-10-29 14:13:43.308790: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N 
+2019-10-29 14:13:43.308984: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10149 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:04:00.0, compute capability: 6.1)
+I1029 06:13:43.476154 20 base_backend.cc:162] Creating instance detector_3d_0_15_gpu0 on GPU 0 (6.1) using model.graphdef
+2019-10-29 14:13:43.476374: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0
+2019-10-29 14:13:43.476448: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-10-29 14:13:43.476460: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 
+2019-10-29 14:13:43.476469: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N 
+2019-10-29 14:13:43.476624: I external/org_tensorflow/tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10149 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:04:00.0, compute capability: 6.1)
+I1029 06:13:43.831117 20 model_repository_manager.cc:758] successfully loaded 'detector_3d' version 1

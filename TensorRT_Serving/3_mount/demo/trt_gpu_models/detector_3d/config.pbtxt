@@ -1,0 +1,28 @@
+name: "detector_3d"
+platform: "tensorflow_graphdef"
+max_batch_size: 100
+input [
+  {
+    name: "input_1"
+    data_type: TYPE_FP32
+    dims: [1, 128, 128, 128 ]
+  },
+  {
+    name: "input_2"
+    data_type: TYPE_FP32
+    dims: [3, 32, 32, 32 ]
+  }
+]
+output [
+  {
+    name: "permute_1/transpose"
+    data_type: TYPE_FP32
+    dims: [32, 32, 32, 3, 5 ]
+  }
+]
+instance_group [
+  {
+    count: 16
+    kind: KIND_GPU
+  }
+]

@@ -1,0 +1,26 @@
+version: '2.4'
+services:
+  cpu-serving:
+    image: proxima/tf_serving_cpu:v2.01
+    restart: always
+    container_name: cpu-serving-S1
+    ports:
+      - "19000:19000"
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ../model/cpu_models:/data
+    network_mode:
+      bridge
+  gpu-serving:
+    image: proxima/tf_serving_gpu:v2.01
+    restart: always
+    runtime:
+      nvidia
+    ports:
+      - "19001:19001"
+    container_name: gpu-serving-S1
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ../model/gpu_models:/data
+    network_mode:
+      bridge

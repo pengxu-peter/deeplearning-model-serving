@@ -1,0 +1,15 @@
+version: '2.4'
+services:
+  gpu-serving-demo:
+    image: proxima/tf_serving_gpu:v2.01
+    restart: always
+    runtime:
+      nvidia
+    ports:
+      - "19001:19001"
+    container_name: gpu-serving-S1-demo
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ./gpu_models:/data
+    network_mode:
+      bridge

@@ -1,0 +1,19 @@
+version: '2.4'
+services:
+  gpu-serving-xupeng:
+    image: harbor.do.proxima-ai.com/alpha/nvcr.io/nvidia/tensorrtserver:19.06-py3
+    restart: always
+    runtime:
+      nvidia
+    container_name: gpu-serving-trt-xupeng
+    ports:
+      - "19001:8001"
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ./trt_gpu_models:/data
+    entrypoint:
+      - /bin/bash
+      - /data/entrypoint.sh
+    network_mode:
+      bridge
+    
