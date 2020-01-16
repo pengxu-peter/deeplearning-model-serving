@@ -21,5 +21,7 @@
     - 4 [python代码验证TRT模型是否正常挂载](TensorRT_Serving/4_python_check/pb_python_check.md)
 
   
+## 参考资料
+[TensorFlow 2.0 部署：TensorFlow Serving](https://mp.weixin.qq.com/s?src=11&timestamp=1579152232&ver=2099&signature=TmY2z14SJ31LGwNig9*mHTjow8ui7OlhN3KLVt-qVmvwmhnBjX2it-htz2fWackJiQZPJzdyEhLKUzV*NyUby4uXeNYjCaYm*hBiUffP87H*WxjcjSqLHaKVkSUW2CvI&new=1)
 
 
